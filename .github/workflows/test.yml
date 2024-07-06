@@ -6,7 +6,5 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
             -   name: Checkout
-                run: |
-                ls -a
-                echo ${{GITHUB_REPOSITORY}}
+                run: echo ${{GITHUB_REPOSITORY}}
                 
