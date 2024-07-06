@@ -6,5 +6,6 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
             -   name: Checkout
-                run: echo "Hello there $GITHUB_REPOSITORY"
-                
+                run: |
+                git clone --branch main "https://github.com/$GITHUB_REPOSITORY" --depth=1
+                ls -a
