@@ -6,6 +6,6 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
             -   name: Checkout
-                run: |
-                git clone --branch main "https://github.com/$GITHUB_REPOSITORY" --depth=1
-                ls -a
+                run: | 
+                     git clone --branch main "https://github.com/$GITHUB_REPOSITORY" --depth=1
+                     ls -a
